@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AVQENO — 사이버 보안 목업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../demo.css"></head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">AVQENO</a>
+    <nav class="menu">
+      <a href="#platform">플랫폼</a>
+      <a href="#threats">실시간 위협</a>
+      <a href="#why">왜 AVQENO</a>
+      <a href="#proof">레퍼런스</a>
+      <a href="#blog">리서치</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#" class="link">로그인</a>
+      <a href="#" class="btn-green">데모 요청 →</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="terminal">
+    <div class="t-bar"><span></span><span></span><span></span><small>AVQENO@core:~$</small></div>
+    <div class="t-body">
+      <p><span class="prompt">$</span> AVQENO scan --network --realtime <span class="cursor">_</span></p>
+      <p class="t-warn">[!] 2026-05-18 14:02:07 — anomaly detected: lateral_movement (host: web-03)</p>
+      <p class="t-ok">[✓] 2026-05-18 14:02:07.412 — auto-quarantine executed (latency: 405ms)</p>
+      <p class="t-info">[i] threat actor profile: TA-7714 (kimsuky-cluster, kr-target)</p>
+      <p class="t-ok">[✓] containment confirmed — 0 spread events</p>
+    </div>
+  </div>
+  <div class="hero-content">
+    <span class="eyebrow">▮ NEXT-GEN XDR PLATFORM</span>
+    <h1>0.4초 만에<br />침해를 차단합니다.</h1>
+    <p>AVQENO는 AI 기반 XDR(Extended Detection &amp; Response) 플랫폼입니다.<br />엔드포인트, 네트워크, 클라우드, 아이덴티티를 하나의 컨텍스트로 분석해 평균 405ms 안에 자동 격리까지 수행합니다.</p>
+    <div class="hero-cta">
+      <a href="#" class="btn-green lg">14일 무료 PoC →</a>
+      <a href="#" class="btn-ghost lg">기술 백서 다운로드</a>
+    </div>
+    <div class="hero-trust">
+      <small>전 세계 1,840여 조직이 AVQENO로 보호받고 있습니다</small>
+      <div class="t-logos"><span>KB금융</span><span>네이버</span><span>현대차</span><span>SAP</span><span>Stripe</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="threats" class="threat">
+  <div class="container">
+    <header class="sec-head">
+      <span class="eyebrow">▮ LIVE THREAT INTEL</span>
+      <h2>지금 이 순간, 전 세계에서.</h2>
+    </header>
+    <div class="threat-grid">
+      <div class="t-stat live">
+        <small>BLOCKED ATTACKS (24H)</small>
+        <strong id="t-attacks">3,742,184</strong>
+        <p>실시간 차단된 공격 시도</p>
+      </div>
+      <div class="t-stat">
+        <small>RANSOMWARE FAMILIES</small>
+        <strong>1,420</strong>
+        <p>현재 추적 중인 변종</p>
+      </div>
+      <div class="t-stat">
+        <small>AVG CONTAINMENT</small>
+        <strong>405<span>ms</span></strong>
+        <p>탐지 → 격리 평균 소요</p>
+      </div>
+      <div class="t-stat">
+        <small>0-DAY DETECTED</small>
+        <strong>147</strong>
+        <p>2026년 1Q 자체 발견</p>
+      </div>
+    </div>
+    <div class="threat-map">
+      <p class="terminal-line"><span class="prompt">$</span> tail -f /var/log/AVQENO/live.log</p>
+      <div class="log-stream" id="log">
+        <p class="t-warn">[14:02:07] CN → KR · brute_force · web-03 · BLOCKED</p>
+        <p class="t-ok">[14:02:06] credential_stuffing · auto-quarantine · 412ms</p>
+        <p class="t-warn">[14:02:05] RU → US · ransomware_payload · STOPPED</p>
+        <p class="t-ok">[14:02:04] phishing_chain · email_gateway · BLOCKED</p>
+        <p class="t-info">[14:02:03] new ioc enrolled: 4.2k indicators</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="platform" class="platform">
+  <div class="container">
+    <header class="sec-head">
+      <span class="eyebrow">▮ THE PLATFORM</span>
+      <h2>4개 도메인, 하나의 컨텍스트.</h2>
+    </header>
+    <div class="pl-grid">
+      <article class="pl-card">
+        <span class="pl-num">01</span>
+        <h3>ENDPOINT</h3>
+        <p>EDR 차세대. 행위 기반 탐지, 메모리 패턴 분석, 자가복구.</p>
+        <ul><li>· Windows / Mac / Linux</li><li>· 리소스 점유 &lt; 1%</li><li>· 오프라인 작동</li></ul>
+      </article>
+      <article class="pl-card">
+        <span class="pl-num">02</span>
+        <h3>NETWORK</h3>
+        <p>NDR + IDS. 암호화 트래픽 분석, C2 탐지, DNS 터널링 차단.</p>
+        <ul><li>· 100Gbps 라인 처리</li><li>· TLS 1.3 가시성</li><li>· SASE 호환</li></ul>
+      </article>
+      <article class="pl-card">
+        <span class="pl-num">03</span>
+        <h3>CLOUD</h3>
+        <p>CNAPP. AWS, Azure, GCP, K8s 통합 가시성 + 컴플라이언스.</p>
+        <ul><li>· CSPM + CWPP + CIEM</li><li>· IaC 스캔</li><li>· SOC2 / ISMS-P</li></ul>
+      </article>
+      <article class="pl-card">
+        <span class="pl-num">04</span>
+        <h3>IDENTITY</h3>
+        <p>ITDR. AD, Entra, Okta 보호. 권한 상승 / lateral movement 탐지.</p>
+        <ul><li>· 제로트러스트 적용</li><li>· MFA 우회 탐지</li><li>· 비정상 로그인 분석</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="why">
+  <div class="container">
+    <header class="sec-head">
+      <span class="eyebrow">▮ WHY AVQENO</span>
+      <h2>일반 보안과는 다른 4가지.</h2>
+    </header>
+    <div class="why-list">
+      <article class="why-row">
+        <div class="w-num">01</div>
+        <div>
+          <h4>0.4초 자동 차단 — 사람을 기다리지 않습니다.</h4>
+          <p>경쟁사 평균 9분 12초 vs. AVQENO 405ms. 분석가 개입 전 자동 격리가 기본 정책입니다.</p>
+        </div>
+      </article>
+      <article class="why-row">
+        <div class="w-num">02</div>
+        <div>
+          <h4>거짓 양성(FP) 96% 감소.</h4>
+          <p>4개 도메인을 단일 컨텍스트로 묶어 분석. 분석가가 보는 알람 수가 1/24로 줄어듭니다.</p>
+        </div>
+      </article>
+      <article class="why-row">
+        <div class="w-num">03</div>
+        <div>
+          <h4>설치 30분 — 6주 PoC가 표준이던 시대 아닙니다.</h4>
+          <p>에이전트 1개 설치, 클라우드 커넥터 1번 인증. 30분 안에 모든 데이터 흐름이 보입니다.</p>
+        </div>
+      </article>
+      <article class="why-row">
+        <div class="w-num">04</div>
+        <div>
+          <h4>국내 컴플라이언스 기본 탑재.</h4>
+          <p>ISMS-P, 개보법, 전자금융감독규정, 망분리 등 국내 요건이 미리 매핑되어 있습니다.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="proof" class="proof">
+  <div class="container">
+    <header class="sec-head">
+      <span class="eyebrow">▮ PROOF</span>
+      <h2>숫자로 검증된 성과.</h2>
+    </header>
+    <div class="proof-grid">
+      <article class="pf-card">
+        <strong>1,840+</strong>
+        <p>고객 조직<br />(금융 412 · 제조 380 · 공공 220)</p>
+      </article>
+      <article class="pf-card">
+        <strong>99.998<span>%</span></strong>
+        <p>탐지 정확도<br />(MITRE ATT&CK 2025 평가)</p>
+      </article>
+      <article class="pf-card">
+        <strong>0<span>건</span></strong>
+        <p>2025년 고객사 침해 사고<br />(AVQENO 도입 이후)</p>
+      </article>
+    </div>
+    <blockquote class="proof-quote">
+      <p>"AVQENO 도입 후 1년간 우리 SOC팀의 알람 처리 시간이 평균 7분에서 18초로 줄었습니다. 야간 콜이 사라졌어요."</p>
+      <small>— 한OO, A대형 은행 정보보안 본부장</small>
+    </blockquote>
+  </div>
+</section>
+
+<section id="blog" class="blog">
+  <div class="container">
+    <header class="sec-head">
+      <span class="eyebrow">▮ RESEARCH</span>
+      <h2>AVQENO Threat Research.</h2>
+    </header>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <small>2026.05.10 · CVE-2026-21034</small>
+        <h4>국내 ERP 솔루션 RCE 취약점 발견 — 분석 리포트</h4>
+        <p>AVQENO Labs가 발견한 0-day 취약점. CVSS 9.8, 즉시 패치 권고.</p>
+      </article>
+      <article class="blog-card">
+        <small>2026.05.02 · TA-7714 추적</small>
+        <h4>김수키 클러스터 신규 페이로드 분석</h4>
+        <p>국내 외교부 사칭 스피어피싱에서 발견된 새로운 백도어 변종.</p>
+      </article>
+      <article class="blog-card">
+        <small>2026.04.18 · 산업 동향</small>
+        <h4>2026 1Q 한국 위협 인텔리전스 보고서</h4>
+        <p>국내 표적 공격 +47%, 랜섬웨어 평균 요구액 -22% 등 핵심 데이터 8건.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-inner">
+    <span class="eyebrow">▮ START YOUR POC</span>
+    <h2>14일이면 충분합니다.<br />침해는 그보다 빠르지만요.</h2>
+    <p>전담 SE 엔지니어가 즉시 배정됩니다. 카드 등록, 컨설팅 비용 없음.</p>
+    <a href="#" class="btn-green lg">PoC 신청 →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <p class="logo">AVQENO</p>
+      <p class="foot-tag">Next-Gen XDR. Made in Seoul, trusted globally.</p>
+    </div>
+    <div><h5>PLATFORM</h5><a href="#">Endpoint</a><a href="#">Network</a><a href="#">Cloud</a><a href="#">Identity</a></div>
+    <div><h5>COMPANY</h5><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a><a href="#">Press</a></div>
+    <div><h5>SUPPORT</h5><a href="#">Trust Center</a><a href="#">Docs</a><a href="#">CVE Disclosure</a><a href="#">Status</a></div>
+  </div>
+  <div class="foot-bot container">
+    <small>© 2026 AVQENO INC. · SOC2 Type II · ISO 27001 · ISMS-P</small>
+    <small>RESPONSIBLE DISCLOSURE: security@AVQENO.io</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<aside class="avq-demo-notice">AVQENO / 사이버 보안 디자인 목업 <span>화면 속 수치·상품·서비스는 예시입니다.</span><a href="../../index.html#possibilities">스튜디오로 돌아가기 ↗</a></aside><script src="../demo.js"></script></body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AVQENO — 핀테크 목업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../demo.css"></head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">AVQENO</a>
+    <nav class="menu">
+      <a href="#products">상품</a>
+      <a href="#robo">로보어드바이저</a>
+      <a href="#pricing">수수료</a>
+      <a href="#trust">신뢰</a>
+      <a href="#download">다운로드</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#" class="link">로그인</a>
+      <a href="#" class="btn-navy">계좌개설 →</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <span class="badge">🔒 금융위 인가 1호 종합 자산관리 플랫폼</span>
+      <h1>주식, ETF, 채권, 예금까지<br /><span class="grad">하나의 계좌로.</span></h1>
+      <p>분산된 자산을 한 화면에서. 자동 리밸런싱 알고리즘과 함께, 매일 5분이면 충분한 투자 운영.</p>
+      <div class="hero-cta">
+        <a href="#" class="btn-navy lg">앱 다운로드 →</a>
+        <a href="#" class="btn-out lg">3분 데모 보기</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>240<small>만</small></strong><span>누적 가입자</span></div>
+        <div><strong>14<small>조</small></strong><span>운용자산 (AUM)</span></div>
+        <div><strong>4.8<small>점</small></strong><span>앱 평점 (₂₀ⱼ만)</span></div>
+      </div>
+    </div>
+    <div class="hero-card-wrap">
+      <article class="phone-card">
+        <header class="pc-head">
+          <small>총 자산</small>
+          <small>2026.05.18</small>
+        </header>
+        <div class="pc-amount">
+          ₩ <span id="amount">38,420,580</span>
+          <p class="pc-change">▲ ₩ 1,284,320 (+3.46%) <small>오늘</small></p>
+        </div>
+        <div class="pc-chart">
+          <svg viewBox="0 0 300 100" preserveAspectRatio="none" class="chart-svg">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#3667e8" stop-opacity=".4"/>
+                <stop offset="1" stop-color="#3667e8" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0,80 L20,75 L40,68 L60,72 L80,60 L100,55 L120,62 L140,48 L160,42 L180,38 L200,45 L220,28 L240,22 L260,25 L280,18 L300,12 L300,100 L0,100 Z" fill="url(#g1)"/>
+            <path d="M0,80 L20,75 L40,68 L60,72 L80,60 L100,55 L120,62 L140,48 L160,42 L180,38 L200,45 L220,28 L240,22 L260,25 L280,18 L300,12" stroke="#3667e8" stroke-width="2" fill="none"/>
+          </svg>
+          <div class="pc-tabs"><span class="active">1D</span><span>1W</span><span>1M</span><span>1Y</span><span>ALL</span></div>
+        </div>
+        <ul class="pc-list">
+          <li><span class="dot blue"></span>주식 · 24,180,000 <small>62.9%</small></li>
+          <li><span class="dot navy"></span>ETF · 9,420,000 <small>24.5%</small></li>
+          <li><span class="dot cyan"></span>채권 · 3,200,000 <small>8.3%</small></li>
+          <li><span class="dot gray"></span>현금 · 1,620,580 <small>4.2%</small></li>
+        </ul>
+      </article>
+      <div class="float-card a">
+        <small>이번 달 수익</small>
+        <strong>+ ₩ 1,284,320</strong>
+        <span class="up">▲ 3.46%</span>
+      </div>
+      <div class="float-card b">
+        <small>다음 리밸런싱</small>
+        <strong>2일 4시간 뒤</strong>
+        <span>자동 실행</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ticker">
+  <div class="t-track">
+    <span><strong>KOSPI</strong> 2,742.18 <em class="up">+0.42%</em></span>
+    <span><strong>KOSDAQ</strong> 882.40 <em class="down">-0.18%</em></span>
+    <span><strong>S&P500</strong> 5,820.14 <em class="up">+0.62%</em></span>
+    <span><strong>NASDAQ</strong> 18,420.22 <em class="up">+0.84%</em></span>
+    <span><strong>USD/KRW</strong> 1,372.40 <em class="down">-0.10%</em></span>
+    <span><strong>BTC/USD</strong> 71,420.00 <em class="up">+1.24%</em></span>
+    <span><strong>KOSPI</strong> 2,742.18 <em class="up">+0.42%</em></span>
+    <span><strong>KOSDAQ</strong> 882.40 <em class="down">-0.18%</em></span>
+    <span><strong>S&P500</strong> 5,820.14 <em class="up">+0.62%</em></span>
+    <span><strong>NASDAQ</strong> 18,420.22 <em class="up">+0.84%</em></span>
+  </div>
+</section>
+
+<section id="products" class="products">
+  <div class="container">
+    <header class="sec-head">
+      <small class="eyebrow">PRODUCTS</small>
+      <h2>모든 자산 클래스, 한 앱에서.</h2>
+    </header>
+    <div class="prod-grid">
+      <article class="prod-card">
+        <div class="pc-icon">📈</div>
+        <h3>국내·해외 주식</h3>
+        <p>국내 3개 거래소 + 미국·일본·홍콩 4개 시장. 환전 없이 원화로 매수.</p>
+        <small class="pc-meta">수수료 0.015% · 최저 환전 우대</small>
+      </article>
+      <article class="prod-card">
+        <div class="pc-icon">📊</div>
+        <h3>ETF · 펀드</h3>
+        <p>국내외 4,200여 종. AI가 추천하는 ‘우리 집 포트폴리오’.</p>
+        <small class="pc-meta">선취 수수료 0% · 1만원부터</small>
+      </article>
+      <article class="prod-card">
+        <div class="pc-icon">📜</div>
+        <h3>채권</h3>
+        <p>국채, 회사채 직접 매수. 최소 1,000원 단위 소액 분할 가능.</p>
+        <small class="pc-meta">연 4.2% 평균 수익률 (2025)</small>
+      </article>
+      <article class="prod-card">
+        <div class="pc-icon">💰</div>
+        <h3>예금 · 적금</h3>
+        <p>22개 은행 금리 실시간 비교 + 1탭 가입. 최고 연 5.4%.</p>
+        <small class="pc-meta">예금자 보호 5천만원</small>
+      </article>
+      <article class="prod-card">
+        <div class="pc-icon">🏦</div>
+        <h3>연금 · ISA</h3>
+        <p>세제 혜택 자동 계산. 연 700만원 세액공제, 26.4만원 환급.</p>
+        <small class="pc-meta">절세 시뮬레이터 제공</small>
+      </article>
+      <article class="prod-card">
+        <div class="pc-icon">🪙</div>
+        <h3>대체투자</h3>
+        <p>리츠, 미술품 조각투자, 음악 저작권. 분산 투자 옵션.</p>
+        <small class="pc-meta">최소 5만원부터</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="robo" class="robo">
+  <div class="container two-col">
+    <div>
+      <small class="eyebrow">ROBOADVISOR</small>
+      <h2>매일 5분 들여서<br />매년 평균 +9.2% 수익.</h2>
+      <p>금융위 인가 받은 자체 알고리즘 ‘BC-Score’가 시장 변동에 따라 매월 자동 리밸런싱합니다. 100% 자율 운영도, 직접 조정도 가능합니다.</p>
+      <ul class="robo-list">
+        <li><span>✓</span> 200개 ETF 중 최적 조합 자동 선택</li>
+        <li><span>✓</span> 시장 변동 시 자동 헤지 (옵션 가입 시)</li>
+        <li><span>✓</span> 세금 최적화 매도 시점 추천</li>
+        <li><span>✓</span> 출시 이후 누적 수익률 +84%</li>
+      </ul>
+      <a href="#" class="link-arrow">3분 무료 진단 시작 →</a>
+    </div>
+    <div class="robo-card">
+      <header>
+        <small>나의 BC-Score</small>
+        <strong>82 / 100</strong>
+      </header>
+      <p class="score-label">안정 추구형 (Moderate)</p>
+      <div class="bars">
+        <div class="bar"><span>국내주식</span><div class="bar-track"><div class="bar-fill" style="width:32%"></div></div><b>32%</b></div>
+        <div class="bar"><span>해외주식</span><div class="bar-track"><div class="bar-fill" style="width:28%"></div></div><b>28%</b></div>
+        <div class="bar"><span>채권</span><div class="bar-track"><div class="bar-fill" style="width:24%"></div></div><b>24%</b></div>
+        <div class="bar"><span>대체</span><div class="bar-track"><div class="bar-fill" style="width:10%"></div></div><b>10%</b></div>
+        <div class="bar"><span>현금</span><div class="bar-track"><div class="bar-fill" style="width:6%"></div></div><b>6%</b></div>
+      </div>
+      <footer>지난 12개월 수익률 <strong class="up">+11.4%</strong></footer>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <div class="container">
+    <header class="sec-head center">
+      <small class="eyebrow">FEES</small>
+      <h2>가장 정직한 수수료 정책.</h2>
+    </header>
+    <table class="fee-table">
+      <thead>
+        <tr><th>상품</th><th>AVQENO</th><th>업계 평균</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>국내주식 매매</td><td><strong>0.015%</strong></td><td>0.024%</td></tr>
+        <tr><td>해외주식 매매</td><td><strong>0.07%</strong></td><td>0.15%</td></tr>
+        <tr><td>해외주식 환전</td><td><strong>95% 우대</strong></td><td>70% 우대</td></tr>
+        <tr><td>ETF 선취</td><td><strong>0%</strong></td><td>0.5 ~ 1%</td></tr>
+        <tr><td>로보어드바이저</td><td><strong>연 0.3%</strong></td><td>연 0.7%</td></tr>
+        <tr><td>입출금 수수료</td><td><strong>0원</strong></td><td>0 ~ 500원</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="trust" class="trust">
+  <div class="container">
+    <header class="sec-head center">
+      <small class="eyebrow">SECURITY &amp; TRUST</small>
+      <h2>안전이 1번 원칙입니다.</h2>
+    </header>
+    <div class="trust-grid">
+      <article><strong>🛡</strong><h4>금융위원회 인가</h4><p>투자중개업, 투자일임업 인가 보유. 매분기 외부 감사.</p></article>
+      <article><strong>🔐</strong><h4>FDS 부정거래 탐지</h4><p>AI 기반 실시간 이상거래 탐지. 평균 차단 0.8초.</p></article>
+      <article><strong>🏦</strong><h4>예치금 별도 보관</h4><p>전 고객 예치금은 한국증권금융에 별도 예치, 회사 자산과 분리.</p></article>
+      <article><strong>🔑</strong><h4>생체 + 2FA</h4><p>지문 / 얼굴 인식 + OTP 이중 인증. 비밀번호 단독 로그인 차단.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="download">
+  <div class="container dl-inner">
+    <div>
+      <small class="eyebrow">DOWNLOAD</small>
+      <h2>30초면 시작합니다.</h2>
+      <p>신분증 촬영, 본인 인증, 계좌 개설까지 평균 3분 18초.</p>
+      <div class="dl-btns">
+        <a href="#" class="dl-btn"><span>🍎</span><div><small>Download on</small><strong>App Store</strong></div></a>
+        <a href="#" class="dl-btn"><span>▶</span><div><small>GET IT ON</small><strong>Google Play</strong></div></a>
+      </div>
+    </div>
+    <div class="qr">
+      <div class="qr-box"></div>
+      <p>QR로<br />바로 다운로드</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <p class="logo">AVQENO</p>
+      <p class="foot-desc">㈜블루캐피탈 자산운용 · 대표 송하영<br />금융위 인가 제2018-금융투자업-0xx호</p>
+    </div>
+    <div><h5>상품</h5><a href="#">주식</a><a href="#">ETF</a><a href="#">채권</a><a href="#">예금</a></div>
+    <div><h5>서비스</h5><a href="#">로보어드바이저</a><a href="#">절세</a><a href="#">자산 진단</a></div>
+    <div><h5>고객</h5><a href="#">고객센터</a><a href="#">공지사항</a><a href="#">FAQ</a><a href="#">투자유의</a></div>
+  </div>
+  <div class="foot-bot container">
+    <small>© 2026 AVQENO · 투자에는 손실 가능성이 있으며, 원금 손실의 책임은 투자자 본인에게 있습니다.</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<aside class="avq-demo-notice">AVQENO / 핀테크 디자인 목업 <span>화면 속 수치·상품·서비스는 예시입니다.</span><a href="../../index.html#possibilities">스튜디오로 돌아가기 ↗</a></aside><script src="../demo.js"></script></body>
+</html>

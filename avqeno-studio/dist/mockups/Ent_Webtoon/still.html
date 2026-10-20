@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AVQENO — 웹툰 목업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800;900&family=Black+Han+Sans&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../demo.css"><style>*,*:before,*:after{animation:none!important;transition:none!important}body{padding-bottom:0!important}</style></head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo">AVQENO</a>
+    <nav class="menu">
+      <a href="#today" class="active">투데이</a>
+      <a href="#rank">랭킹</a>
+      <a href="#new">신작</a>
+      <a href="#genre">장르</a>
+      <a href="#editor">에디터픽</a>
+    </nav>
+    <div class="nav-right">
+      <button class="search" aria-label="search">🔍</button>
+      <a href="#" class="my">MY</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-wrap">
+    <div class="hero-banner" style="background-image:url('https://picsum.photos/seed/wt-banner/1400/600')">
+      <div class="hb-text">
+        <span class="hb-tag">화 / 금 연재</span>
+        <h1>한낮의 산책</h1>
+        <p>한 번도 만난 적 없는 두 사람이, 같은 시간 같은 거리를 지나친다.</p>
+        <div class="hb-meta">
+          <span>★ 9.94</span><span>구독자 142만</span><span>106화 진행 중</span>
+        </div>
+        <a href="#" class="hb-btn">▶ 1화 무료로 보기</a>
+      </div>
+    </div>
+    <aside class="hero-side">
+      <h4>이번 주 인기</h4>
+      <ol>
+        <li><span class="rk up">1 ▲</span><div><b>전공의의 일기</b><small>의학 · 김선호</small></div></li>
+        <li><span class="rk up">2 ▲</span><div><b>마지막 항해</b><small>판타지 · 박세영</small></div></li>
+        <li><span class="rk">3 -</span><div><b>3교시는 운동장</b><small>학원물 · 정도현</small></div></li>
+        <li><span class="rk down">4 ▼</span><div><b>퇴근길 미스터리</b><small>스릴러 · 이혜진</small></div></li>
+        <li><span class="rk up">5 ▲</span><div><b>제일 좋아하는 계절</b><small>로맨스 · 한지윤</small></div></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section id="today" class="today">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>📅 오늘의 신작 <small>월요일</small></h2>
+      <a href="#" class="more">전체 →</a>
+    </header>
+    <div class="day-grid">
+      <article class="card">
+        <div class="c-img" style="background-image:url('https://picsum.photos/seed/wt-1/400/520')">
+          <span class="tag-new">UP</span>
+        </div>
+        <h4>한낮의 산책</h4>
+        <small>김도윤 · ★ 9.94</small>
+      </article>
+      <article class="card">
+        <div class="c-img" style="background-image:url('https://picsum.photos/seed/wt-2/400/520')">
+          <span class="tag-new">UP</span>
+        </div>
+        <h4>전공의의 일기</h4>
+        <small>김선호 · ★ 9.91</small>
+      </article>
+      <article class="card">
+        <div class="c-img" style="background-image:url('https://picsum.photos/seed/wt-3/400/520')"></div>
+        <h4>마지막 항해</h4>
+        <small>박세영 · ★ 9.88</small>
+      </article>
+      <article class="card">
+        <div class="c-img" style="background-image:url('https://picsum.photos/seed/wt-4/400/520')"></div>
+        <h4>3교시는 운동장</h4>
+        <small>정도현 · ★ 9.85</small>
+      </article>
+      <article class="card">
+        <div class="c-img" style="background-image:url('https://picsum.photos/seed/wt-5/400/520')">
+          <span class="tag-new">UP</span>
+        </div>
+        <h4>퇴근길 미스터리</h4>
+        <small>이혜진 · ★ 9.82</small>
+      </article>
+      <article class="card">
+        <div class="c-img" style="background-image:url('https://picsum.photos/seed/wt-6/400/520')"></div>
+        <h4>제일 좋아하는 계절</h4>
+        <small>한지윤 · ★ 9.78</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="genre" class="genre">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>🎨 장르별 모아보기</h2>
+    </header>
+    <div class="g-row">
+      <a href="#" class="g a"><span>🌸</span><b>로맨스</b><small>842 작품</small></a>
+      <a href="#" class="g b"><span>🗡</span><b>판타지</b><small>620 작품</small></a>
+      <a href="#" class="g c"><span>😱</span><b>스릴러</b><small>180 작품</small></a>
+      <a href="#" class="g d"><span>👻</span><b>호러</b><small>92 작품</small></a>
+      <a href="#" class="g e"><span>🏫</span><b>학원물</b><small>340 작품</small></a>
+      <a href="#" class="g f"><span>🍳</span><b>일상</b><small>510 작품</small></a>
+      <a href="#" class="g g"><span>⚔</span><b>액션</b><small>290 작품</small></a>
+      <a href="#" class="g h"><span>🤖</span><b>SF</b><small>140 작품</small></a>
+    </div>
+  </div>
+</section>
+
+<section id="editor" class="editor">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>📌 에디터 픽 — 이번 주의 발견</h2>
+      <a href="#" class="more">큐레이션 전체 →</a>
+    </header>
+    <div class="ed-grid">
+      <article class="ed big" style="background-image:url('https://picsum.photos/seed/wt-ed1/900/500')">
+        <div class="ed-meta">
+          <span class="ed-tag">에디터 추천</span>
+          <h3>"그림은 거칠지만, 마음이 무너지는 장면이 정확하다"</h3>
+          <p>4년 만에 돌아온 김도윤 작가의 신작. 매주 화·금 연재.</p>
+        </div>
+      </article>
+      <article class="ed">
+        <div class="ed-img" style="background-image:url('https://picsum.photos/seed/wt-ed2/500/300')"></div>
+        <h4>완결 정주행 추천</h4>
+        <p>이번 달 마무리된 인생작 8선.</p>
+      </article>
+      <article class="ed">
+        <div class="ed-img" style="background-image:url('https://picsum.photos/seed/wt-ed3/500/300')"></div>
+        <h4>신인 작가 5명</h4>
+        <p>AVQENO 공모전 출신, 지금 가장 핫한 신인.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="rank" class="rank">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>🏆 종합 랭킹</h2>
+      <div class="rk-tabs">
+        <button class="rt active">실시간</button>
+        <button class="rt">주간</button>
+        <button class="rt">월간</button>
+      </div>
+    </header>
+    <ol class="rank-list">
+      <li><span>01</span><div class="ri" style="background-image:url('https://picsum.photos/seed/rk-1/120/160')"></div><div><h4>한낮의 산책</h4><small>로맨스 · 김도윤</small></div><b>★ 9.94</b></li>
+      <li><span>02</span><div class="ri" style="background-image:url('https://picsum.photos/seed/rk-2/120/160')"></div><div><h4>전공의의 일기</h4><small>의학 · 김선호</small></div><b>★ 9.91</b></li>
+      <li><span>03</span><div class="ri" style="background-image:url('https://picsum.photos/seed/rk-3/120/160')"></div><div><h4>마지막 항해</h4><small>판타지 · 박세영</small></div><b>★ 9.88</b></li>
+      <li><span>04</span><div class="ri" style="background-image:url('https://picsum.photos/seed/rk-4/120/160')"></div><div><h4>3교시는 운동장</h4><small>학원물 · 정도현</small></div><b>★ 9.85</b></li>
+      <li><span>05</span><div class="ri" style="background-image:url('https://picsum.photos/seed/rk-5/120/160')"></div><div><h4>퇴근길 미스터리</h4><small>스릴러 · 이혜진</small></div><b>★ 9.82</b></li>
+    </ol>
+  </div>
+</section>
+
+<section class="app">
+  <div class="wrap app-inner">
+    <div>
+      <h2>모바일로 더 편하게.</h2>
+      <p>오프라인 저장, 알림 설정, 자정 0시 최신화 알림.</p>
+      <div class="app-btns">
+        <a href="#" class="ab"><span>🍎</span><div><small>Download on</small><strong>App Store</strong></div></a>
+        <a href="#" class="ab"><span>▶</span><div><small>GET IT ON</small><strong>Google Play</strong></div></a>
+      </div>
+    </div>
+    <div class="app-img" style="background-image:url('https://picsum.photos/seed/wt-app/600/700')"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap ft">
+    <div>
+      <p class="logo">AVQENO</p>
+      <p class="copy">㈜AVQENO · 대표 이서현 · 출판신고 제0xx호</p>
+    </div>
+    <div class="ft-links"><a href="#">작가지원</a><a href="#">고객센터</a><a href="#">공지사항</a><a href="#">이용약관</a><a href="#">개인정보처리방침</a></div>
+  </div>
+</footer>
+
+
+</body>
+</html>

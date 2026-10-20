@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AVQENO — 물류 목업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../demo.css"><style>*,*:before,*:after{animation:none!important;transition:none!important}body{padding-bottom:0!important}</style></head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="brand">AVQENO</a>
+    <nav>
+      <a href="#track">조회</a>
+      <a href="#services">서비스</a>
+      <a href="#network">네트워크</a>
+      <a href="#tech">기술</a>
+      <a href="#enterprise">기업 고객</a>
+    </nav>
+    <a href="#" class="btn-blue">로그인</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <small class="eb">SINCE 2009 · 84개국 네트워크</small>
+      <h1>국경을 사이에 두고도,<br />어제 출고한 화물.</h1>
+      <p>북아시아 → 미국 서부 평균 47시간. AI 라우팅과 자체 항공편으로 글로벌 풀필먼트의 새로운 기준.</p>
+      <form class="track" onsubmit="event.preventDefault(); document.getElementById('tr').classList.add('on');">
+        <label>운송장 번호</label>
+        <div class="track-row">
+          <input placeholder="예) MRD-2026-3842-001" value="MRD-2026-3842-001" />
+          <button>조회 →</button>
+        </div>
+      </form>
+    </div>
+    <div class="hero-card">
+      <div class="hc-head">
+        <small>실시간 화물 흐름 · 지난 24시간</small>
+        <span class="live">● LIVE</span>
+      </div>
+      <div class="counter">
+        <strong id="cnt">8,420,318</strong>
+        <span>건 처리</span>
+      </div>
+      <div class="hc-list">
+        <div><span class="dot a"></span>인천 → 로스앤젤레스 <small>1,240건 · 47h</small></div>
+        <div><span class="dot b"></span>부산 → 함부르크 <small>892건 · 32d</small></div>
+        <div><span class="dot c"></span>광저우 → 두바이 <small>2,108건 · 12h</small></div>
+        <div><span class="dot d"></span>방콕 → 도쿄 <small>4,402건 · 18h</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="track" class="trackdetail">
+  <div class="wrap" id="tr">
+    <small class="eb">실시간 화물 조회</small>
+    <div class="td-grid">
+      <div class="td-info">
+        <h3>MRD-2026-3842-001</h3>
+        <p class="td-status">▣ 운송 중 · 약 11시간 30분 후 도착 예정</p>
+        <ul>
+          <li><b>출발</b><span>서울 인천공항 · 2026.05.17 23:40</span></li>
+          <li><b>도착 예정</b><span>로스앤젤레스 LAX · 2026.05.18 16:30 (현지)</span></li>
+          <li><b>품목</b><span>전자부품 · 28kg · 안전운송</span></li>
+          <li><b>수령인</b><span>LA Tech Imports Inc. (검증 완료)</span></li>
+        </ul>
+      </div>
+      <div class="td-stages">
+        <div class="stg done"><span>1</span><div><b>출고 처리</b><small>김포 메인 허브 · 05.17 18:20</small></div></div>
+        <div class="stg done"><span>2</span><div><b>국제선 적재</b><small>인천공항 화물청사 · 05.17 22:50</small></div></div>
+        <div class="stg done"><span>3</span><div><b>이륙</b><small>MRD-A380 화물기 · 05.17 23:40</small></div></div>
+        <div class="stg now"><span>4</span><div><b>비행 중</b><small>현재 위치: 태평양 상공 (12,420km)</small></div></div>
+        <div class="stg"><span>5</span><div><b>통관 · 배송</b><small>LAX → 최종지 트럭 배송</small></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="wrap">
+    <small class="eb">서비스</small>
+    <h2>4개의 핵심 라인업.</h2>
+    <div class="sv-grid">
+      <article class="sv">
+        <span class="num">01</span>
+        <h4>EXPRESS</h4>
+        <p>24 ~ 72시간 글로벌 특송. 188개 도시 익일 배송망.</p>
+        <ul><li>· 인천 → 미국 47h</li><li>· 인천 → 유럽 53h</li><li>· 자체 화물기 12대</li></ul>
+      </article>
+      <article class="sv">
+        <span class="num">02</span>
+        <h4>OCEAN FREIGHT</h4>
+        <p>FCL/LCL 컨테이너 정규 항로. 부산·상하이 기점 84개 항만.</p>
+        <ul><li>· 주 14개 정규 항로</li><li>· 실시간 컨테이너 추적</li><li>· 트럭 연계 통합</li></ul>
+      </article>
+      <article class="sv">
+        <span class="num">03</span>
+        <h4>FULFILLMENT</h4>
+        <p>크로스보더 이커머스 풀필먼트. 입고·재고·포장·배송 일괄.</p>
+        <ul><li>· 14개국 풀필먼트 센터</li><li>· 이커머스 API 직접 연동</li><li>· 반품 처리 통합</li></ul>
+      </article>
+      <article class="sv">
+        <span class="num">04</span>
+        <h4>COLD CHAIN</h4>
+        <p>의약·식품 정온 운송. −80°C ~ +25°C 7단계 온도 관리.</p>
+        <ul><li>· GDP 인증 12개 거점</li><li>· 24시간 모니터링</li><li>· 이탈 시 자동 알림</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="network" class="network">
+  <div class="wrap">
+    <small class="eb">글로벌 네트워크</small>
+    <h2>84개국 · 412개 거점 · 자체 항공편.</h2>
+    <div class="net-grid">
+      <article><strong>84</strong><span>운영 국가</span></article>
+      <article><strong>412</strong><span>물류 거점</span></article>
+      <article><strong>12</strong><span>자체 화물기</span></article>
+      <article><strong>3,800<small>대</small></strong><span>운영 차량</span></article>
+      <article><strong>14,200<small>명</small></strong><span>전 세계 인력</span></article>
+      <article><strong>99.4<small>%</small></strong><span>약속 시간 준수율</span></article>
+    </div>
+  </div>
+</section>
+
+<section id="tech" class="tech">
+  <div class="wrap two-col">
+    <div>
+      <small class="eb">기술</small>
+      <h2>모든 화물에<br />디지털 그림자가 따라붙습니다.</h2>
+      <p>14만 개의 IoT 센서가 모든 거점·차량·항공편의 위치·온도·진동·습도를 실시간으로 기록합니다. AI가 매시간 라우팅을 재계산해 평균 운송시간을 매년 4 ~ 7% 단축해 왔습니다.</p>
+      <ul class="tech-list">
+        <li>✓ 14만 개 IoT 센서 실시간 모니터링</li>
+        <li>✓ AI 라우팅 (매시간 재계산)</li>
+        <li>✓ 블록체인 운송증명 (수출입 자동화)</li>
+        <li>✓ 전 거점 RPA · 비전 검수 도입</li>
+      </ul>
+    </div>
+    <div class="tech-img" style="background-image:url('https://picsum.photos/seed/logix-tech/900/1000')"></div>
+  </div>
+</section>
+
+<section id="enterprise" class="cta">
+  <div class="wrap cta-inner">
+    <div>
+      <h2>기업 고객, 매월 100건 이상 발송하시나요?</h2>
+      <p>전담 SCM 매니저 배정, 단가 협의, 자체 풀필먼트 라인 구성까지. 무료 견적 1영업일 내 회신.</p>
+    </div>
+    <a href="#" class="btn-blue-lg">기업 견적 →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap ft">
+    <div>
+      <p class="brand">AVQENO</p>
+      <p class="copy">메리디안로직스(주) · 대표 김지환 · 사업자등록 000-00-00000<br />국제물류주선업 등록 제0xx호</p>
+    </div>
+    <div><h5>서비스</h5><a href="#">Express</a><a href="#">Ocean</a><a href="#">Fulfillment</a><a href="#">Cold Chain</a></div>
+    <div><h5>지원</h5><a href="#">조회</a><a href="#">고객센터</a><a href="#">FAQ</a><a href="#">청구 문의</a></div>
+    <div><h5>회사</h5><a href="#">소개</a><a href="#">IR</a><a href="#">채용</a><a href="#">ESG</a></div>
+  </div>
+  <small class="ft-bot wrap">© 2026 AVQENO</small>
+</footer>
+
+
+</body>
+</html>

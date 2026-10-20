@@ -1,0 +1,15 @@
+# Original reference checkout stays local; website copies live in dist/mockups.
+/web/
+**/.openai/
+**/node_modules/
+**/.DS_Store
+**/Thumbs.db
+*.log
+*.zip
+*.tar.gz
+.env
+.env.*
+!/avqeno-studio/.env.example
+/avqeno-studio/qa/*
+!/avqeno-studio/qa/verification.md
+/avqeno-studio/dist/thumbs/*.svg

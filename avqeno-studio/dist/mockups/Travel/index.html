@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AVQENO — 여행 목업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&family=Fraunces:ital,wght@1,500;1,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../demo.css"></head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">AVQENO</a>
+    <nav class="menu">
+      <a href="#deals">특가</a>
+      <a href="#destinations">여행지</a>
+      <a href="#packages">패키지</a>
+      <a href="#stays">숙소</a>
+      <a href="#mag">매거진</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#" class="link">로그인</a>
+      <a href="#" class="btn-orange">예약 확인</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('https://picsum.photos/seed/travel-hero/1920/1100')"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>다음 여행, <em>어디로?</em></h1>
+    <p>800개의 여행지, 12,000개의 숙소. 모두 한 번의 검색으로.</p>
+    <form class="search">
+      <div class="s-field"><small>WHERE</small><input placeholder="도시 또는 국가" value="발리, 인도네시아" /></div>
+      <div class="s-field"><small>CHECK-IN</small><input type="date" /></div>
+      <div class="s-field"><small>CHECK-OUT</small><input type="date" /></div>
+      <div class="s-field"><small>GUESTS</small>
+        <select><option>성인 2 · 아이 0</option><option>성인 2 · 아이 1</option><option>성인 4 · 아이 2</option></select>
+      </div>
+      <button type="submit">🔍 검색</button>
+    </form>
+    <div class="hero-quick">
+      <span>인기 검색</span>
+      <a href="#">제주</a><a href="#">발리</a><a href="#">오키나와</a><a href="#">치앙마이</a><a href="#">방콕</a><a href="#">하노이</a>
+    </div>
+  </div>
+</section>
+
+<section id="deals" class="deals">
+  <div class="container">
+    <header class="sec-head">
+      <div><small class="eyebrow">FLASH DEALS</small><h2>오늘만 이 가격, ⏱ 종료까지 <span id="t">14:22:08</span></h2></div>
+      <a href="#" class="link-arrow">전체보기 →</a>
+    </header>
+    <div class="deal-grid">
+      <article class="deal">
+        <div class="d-img" style="background-image:url('https://picsum.photos/seed/deal1/600/700')">
+          <span class="d-badge">-42%</span>
+        </div>
+        <div class="d-meta">
+          <small>3박 4일 · 항공+호텔</small>
+          <h3>발리, 우붓 리트릿</h3>
+          <p class="price"><s>1,289,000</s> <strong>749,000원~</strong></p>
+        </div>
+      </article>
+      <article class="deal">
+        <div class="d-img" style="background-image:url('https://picsum.photos/seed/deal2/600/700')">
+          <span class="d-badge">-38%</span>
+        </div>
+        <div class="d-meta">
+          <small>4박 5일 · 자유여행</small>
+          <h3>오키나와, 츄라우미</h3>
+          <p class="price"><s>1,180,000</s> <strong>729,000원~</strong></p>
+        </div>
+      </article>
+      <article class="deal">
+        <div class="d-img" style="background-image:url('https://picsum.photos/seed/deal3/600/700')">
+          <span class="d-badge">-50%</span>
+        </div>
+        <div class="d-meta">
+          <small>5박 6일 · 패키지</small>
+          <h3>치앙마이, 산속 빌라</h3>
+          <p class="price"><s>1,560,000</s> <strong>779,000원~</strong></p>
+        </div>
+      </article>
+      <article class="deal">
+        <div class="d-img" style="background-image:url('https://picsum.photos/seed/deal4/600/700')">
+          <span class="d-badge">-35%</span>
+        </div>
+        <div class="d-meta">
+          <small>2박 3일 · 호텔만</small>
+          <h3>제주, 신라스테이</h3>
+          <p class="price"><s>540,000</s> <strong>349,000원~</strong></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="destinations" class="dest">
+  <div class="container">
+    <header class="sec-head">
+      <div><small class="eyebrow">DESTINATIONS</small><h2>한국인이 가장 사랑한 여행지.</h2></div>
+    </header>
+    <div class="dest-grid">
+      <a class="dc big" style="background-image:url('https://picsum.photos/seed/dest1/900/700')">
+        <div class="dc-meta"><small>1위 · 49,200건 예약</small><h3>제주</h3></div>
+      </a>
+      <a class="dc" style="background-image:url('https://picsum.photos/seed/dest2/600/450')">
+        <div class="dc-meta"><small>2위</small><h3>발리</h3></div>
+      </a>
+      <a class="dc" style="background-image:url('https://picsum.photos/seed/dest3/600/450')">
+        <div class="dc-meta"><small>3위</small><h3>오키나와</h3></div>
+      </a>
+      <a class="dc" style="background-image:url('https://picsum.photos/seed/dest4/600/450')">
+        <div class="dc-meta"><small>4위</small><h3>다낭</h3></div>
+      </a>
+      <a class="dc" style="background-image:url('https://picsum.photos/seed/dest5/600/450')">
+        <div class="dc-meta"><small>5위</small><h3>치앙마이</h3></div>
+      </a>
+      <a class="dc tall" style="background-image:url('https://picsum.photos/seed/dest6/700/900')">
+        <div class="dc-meta"><small>6위</small><h3>도쿄</h3></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="packages" class="pkgs">
+  <div class="container">
+    <header class="sec-head"><div><small class="eyebrow">CURATED</small><h2>웨이벌리 큐레이터가 짠 패키지.</h2></div></header>
+    <div class="pk-grid">
+      <article class="pkg">
+        <div class="p-img" style="background-image:url('https://picsum.photos/seed/pkg1/700/500')"></div>
+        <div class="p-meta">
+          <span class="p-tag">🌿 슬로우 트래블</span>
+          <h3>10일간의 발리 명상 여행</h3>
+          <p>요가, 명상, 농장 체험. 우붓에서 7일 + 사누르 해변 3일.</p>
+          <div class="p-foot"><strong>2,489,000원~</strong><a href="#" class="btn-mini">자세히</a></div>
+        </div>
+      </article>
+      <article class="pkg">
+        <div class="p-img" style="background-image:url('https://picsum.photos/seed/pkg2/700/500')"></div>
+        <div class="p-meta">
+          <span class="p-tag">🍷 미식 여행</span>
+          <h3>도쿄 4박 + 미슐랭 5코스</h3>
+          <p>미슐랭 5곳 예약 포함. 츠키지 시장 새벽 투어.</p>
+          <div class="p-foot"><strong>3,180,000원~</strong><a href="#" class="btn-mini">자세히</a></div>
+        </div>
+      </article>
+      <article class="pkg">
+        <div class="p-img" style="background-image:url('https://picsum.photos/seed/pkg3/700/500')"></div>
+        <div class="p-meta">
+          <span class="p-tag">🏝 가족 여행</span>
+          <h3>괌, 키즈프렌들리 리조트</h3>
+          <p>아이 동반 4박 5일. 워터파크 1일권 포함.</p>
+          <div class="p-foot"><strong>1,890,000원~</strong><a href="#" class="btn-mini">자세히</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="stays" class="stays">
+  <div class="container">
+    <header class="sec-head"><div><small class="eyebrow">UNIQUE STAYS</small><h2>특별한 곳에서 묵어보세요.</h2></div></header>
+    <div class="st-row">
+      <article class="st"><div style="background-image:url('https://picsum.photos/seed/stay1/600/700')"></div><h4>한옥 스테이 · 안동</h4><p>14만원~</p></article>
+      <article class="st"><div style="background-image:url('https://picsum.photos/seed/stay2/600/700')"></div><h4>트리하우스 · 화천</h4><p>22만원~</p></article>
+      <article class="st"><div style="background-image:url('https://picsum.photos/seed/stay3/600/700')"></div><h4>섬 글램핑 · 통영</h4><p>18만원~</p></article>
+      <article class="st"><div style="background-image:url('https://picsum.photos/seed/stay4/600/700')"></div><h4>오두막 사우나 · 평창</h4><p>32만원~</p></article>
+      <article class="st"><div style="background-image:url('https://picsum.photos/seed/stay5/600/700')"></div><h4>유리돔 풀빌라 · 제주</h4><p>48만원~</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="mag" class="mag">
+  <div class="container">
+    <header class="sec-head"><div><small class="eyebrow">MAGAZINE</small><h2>여행 영감, 매주 업데이트.</h2></div></header>
+    <div class="mag-grid">
+      <article><div style="background-image:url('https://picsum.photos/seed/mag1/600/400')"></div><small>2026.05 · 발리</small><h4>비 오는 우붓이 가장 아름답다</h4></article>
+      <article><div style="background-image:url('https://picsum.photos/seed/mag2/600/400')"></div><small>2026.05 · 오키나와</small><h4>한 번도 안 가본 사람을 위한 7일</h4></article>
+      <article><div style="background-image:url('https://picsum.photos/seed/mag3/600/400')"></div><small>2026.04 · 제주</small><h4>제주 동쪽, 사람 없는 카페 12</h4></article>
+    </div>
+  </div>
+</section>
+
+<section class="news-cta">
+  <div class="container nc-inner">
+    <div>
+      <h2>매주 화요일, <em>여행 영감</em>이 도착합니다.</h2>
+      <p>구독자만 보는 특가 코드와 큐레이션을 보내드려요.</p>
+    </div>
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='구독 완료!';">
+      <input type="email" placeholder="이메일 주소" required />
+      <button>구독하기</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <p class="logo">AVQENO</p>
+      <p class="foot-desc">㈜웨이벌리 트래블 · 통신판매업신고 제2020-0xx호<br />관광사업등록 종합여행업 제0xx호</p>
+    </div>
+    <div><h5>여행</h5><a href="#">특가</a><a href="#">패키지</a><a href="#">자유여행</a><a href="#">크루즈</a></div>
+    <div><h5>도움</h5><a href="#">예약 변경</a><a href="#">취소 정책</a><a href="#">고객센터</a></div>
+    <div><h5>회사</h5><a href="#">소개</a><a href="#">파트너십</a><a href="#">채용</a></div>
+  </div>
+  <div class="foot-bot container">
+    <small>© 2026 AVQENO · 보험: 영업보증보험 1억 가입</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<aside class="avq-demo-notice">AVQENO / 여행 디자인 목업 <span>화면 속 수치·상품·서비스는 예시입니다.</span><a href="../../index.html#possibilities">스튜디오로 돌아가기 ↗</a></aside><script src="../demo.js"></script></body>
+</html>

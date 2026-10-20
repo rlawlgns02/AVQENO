@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AVQENO — 라이프 쇼핑 목업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../demo.css"></head>
+<body>
+
+<!-- 상단 알림 바 -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>📦 5만원 이상 무료배송 · 오늘 출발</span>
+    <div class="topbar-links">
+      <a href="#">고객센터</a><a href="#">로그인</a><a href="#">회원가입</a><a href="#">장바구니 (3)</a>
+    </div>
+  </div>
+</div>
+
+<!-- 헤더 -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="#" class="logo">AVQENO</a>
+    <form class="search">
+      <input type="text" placeholder="검색어를 입력하세요. 예) 무선청소기" />
+      <button type="submit">검색</button>
+    </form>
+    <nav class="header-nav">
+      <a href="#" class="badge-hot">🔥 오늘만 특가</a>
+      <a href="#">이벤트</a>
+      <a href="#">쿠폰</a>
+    </nav>
+  </div>
+  <nav class="category-bar">
+    <div class="container category-inner">
+      <a href="#">전체카테고리 ☰</a>
+      <a href="#">베스트</a>
+      <a href="#">신상</a>
+      <a href="#">패션</a>
+      <a href="#">뷰티</a>
+      <a href="#">식품</a>
+      <a href="#">생활용품</a>
+      <a href="#">디지털</a>
+      <a href="#">가전</a>
+      <a href="#">스포츠</a>
+      <a href="#">유아</a>
+      <a href="#">반려동물</a>
+      <a href="#" class="hot">긴급특가</a>
+    </div>
+  </nav>
+</header>
+
+<!-- 메인 배너 -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-main">
+      <span class="hero-tag">단 하루! TIME SALE</span>
+      <h1>창고 대방출<br /><strong>최대 80% OFF</strong></h1>
+      <p>오늘 23:59까지, 지금 사야 가장 쌉니다.</p>
+      <div class="countdown">
+        <div><span id="cd-h">12</span><small>시간</small></div>
+        <div><span id="cd-m">34</span><small>분</small></div>
+        <div><span id="cd-s">56</span><small>초</small></div>
+      </div>
+      <a href="#deals" class="btn-yellow">지금 사러가기 →</a>
+    </div>
+    <div class="hero-side">
+      <div class="hero-card">
+        <span>⚡</span>
+        <p>번개배송<br /><strong>당일출발</strong></p>
+      </div>
+      <div class="hero-card">
+        <span>💸</span>
+        <p>회원가입시<br /><strong>5천원 즉시할인</strong></p>
+      </div>
+      <div class="hero-card">
+        <span>🎁</span>
+        <p>리뷰 작성<br /><strong>적립금 1000P</strong></p>
+      </div>
+      <div class="hero-card">
+        <span>🚚</span>
+        <p>5만원 이상<br /><strong>무료배송</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 카테고리 그리드 -->
+<section class="cat-grid">
+  <div class="container">
+    <div class="cat-items">
+      <a href="#"><div class="cat-icon">👕</div><span>패션</span></a>
+      <a href="#"><div class="cat-icon">💄</div><span>뷰티</span></a>
+      <a href="#"><div class="cat-icon">🍙</div><span>식품</span></a>
+      <a href="#"><div class="cat-icon">🧴</div><span>생활</span></a>
+      <a href="#"><div class="cat-icon">📱</div><span>디지털</span></a>
+      <a href="#"><div class="cat-icon">🧺</div><span>가전</span></a>
+      <a href="#"><div class="cat-icon">⚽</div><span>스포츠</span></a>
+      <a href="#"><div class="cat-icon">🍼</div><span>유아</span></a>
+      <a href="#"><div class="cat-icon">🐾</div><span>반려</span></a>
+      <a href="#"><div class="cat-icon">📚</div><span>도서</span></a>
+      <a href="#"><div class="cat-icon">🪴</div><span>가구</span></a>
+      <a href="#"><div class="cat-icon">🎮</div><span>취미</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 오늘의 특가 -->
+<section id="deals" class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>🔥 오늘의 특가 <small>23:59까지</small></h2>
+      <a href="#" class="more">전체보기 →</a>
+    </div>
+    <div class="product-grid" id="dealsGrid"></div>
+  </div>
+</section>
+
+<!-- 베스트셀러 -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-head">
+      <h2>👑 베스트셀러 TOP 8</h2>
+      <a href="#" class="more">전체보기 →</a>
+    </div>
+    <div class="product-grid" id="bestGrid"></div>
+  </div>
+</section>
+
+<!-- 띠배너 -->
+<section class="strip">
+  <div class="container strip-inner">
+    <div>📢 신규회원 가입하면 <strong>5,000원</strong> 즉시 할인 쿠폰 지급!</div>
+    <a href="#" class="btn-line">가입하고 받기</a>
+  </div>
+</section>
+
+<!-- 신상품 -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>🆕 신상품 입고</h2>
+      <a href="#" class="more">전체보기 →</a>
+    </div>
+    <div class="product-grid small" id="newGrid"></div>
+  </div>
+</section>
+
+<!-- 리뷰 -->
+<section class="section section-gray">
+  <div class="container">
+    <div class="section-head"><h2>⭐ 실구매 후기</h2></div>
+    <div class="reviews">
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>"가격 보고 의심했는데 품질 진짜 좋네요. 다음에 또 살게요!"</p>
+        <small>김** · 무선 미니선풍기</small>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>"배송 진짜 빨라요. 아침에 주문했는데 저녁에 도착했어요."</p>
+        <small>이** · 주방세제 1L</small>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★☆</div>
+        <p>"이 가격에 이 정도면 가성비 인정. 박스 살짝 찌그러진 거 빼고 만족."</p>
+        <small>박** · 캠핑의자</small>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>"매번 여기서 삽니다. 쿠폰까지 쓰면 더 저렴해요."</p>
+        <small>최** · 강아지 사료 10kg</small>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 푸터 -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <h4>고객센터 1588-0000</h4>
+      <p>평일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)<br />주말/공휴일 휴무</p>
+      <p class="payments">결제수단: 신용카드 · 계좌이체 · 무통장 · 카카오페이 · 네이버페이 · 토스</p>
+    </div>
+    <div class="foot-cols">
+      <div><h5>회사소개</h5><a href="#">AVQENO 소개</a><a href="#">채용</a><a href="#">제휴문의</a></div>
+      <div><h5>쇼핑정보</h5><a href="#">공지사항</a><a href="#">이벤트</a><a href="#">쿠폰존</a></div>
+      <div><h5>고객지원</h5><a href="#">1:1문의</a><a href="#">반품/교환</a><a href="#">FAQ</a></div>
+    </div>
+  </div>
+  <div class="footer-bot container">
+    <small>(주)AVQENO · 대표 홍길동 · 사업자등록번호 000-00-00000 · 통신판매업신고 제2026-서울-0000호</small>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<aside class="avq-demo-notice">AVQENO / 라이프 쇼핑 디자인 목업 <span>화면 속 수치·상품·서비스는 예시입니다.</span><a href="../../index.html#possibilities">스튜디오로 돌아가기 ↗</a></aside><script src="../demo.js"></script></body>
+</html>

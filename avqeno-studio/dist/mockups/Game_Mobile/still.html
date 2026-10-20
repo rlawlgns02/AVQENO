@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AVQENO — 모바일 게임 목업</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="../demo.css"><style>*,*:before,*:after{animation:none!important;transition:none!important}body{padding-bottom:0!important}</style></head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">AVQENO</a>
+    <nav class="nav-menu">
+      <a href="#world">월드</a>
+      <a href="#class">클래스</a>
+      <a href="#media">미디어</a>
+      <a href="#news">소식</a>
+    </nav>
+    <a href="#preorder" class="nav-btn">사전예약 →</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('https://picsum.photos/seed/eclipse-hero/1920/1080')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">2026 SUMMER · GLOBAL LAUNCH</span>
+    <h1 class="title-glow">이클립스<br />사가</h1>
+    <p class="hero-sub">차원이 무너진 세계, 마지막 별의 후예가 되어<br />광활한 오픈필드에서 전설의 서사를 시작하라.</p>
+    <div class="counter">
+      <div><strong id="d">128</strong><span>DAYS</span></div>
+      <div><strong id="h">14</strong><span>HOURS</span></div>
+      <div><strong id="m">22</strong><span>MIN</span></div>
+      <div><strong id="s">08</strong><span>SEC</span></div>
+    </div>
+    <div class="hero-cta">
+      <a href="#preorder" class="btn-grad">사전예약 신청 ⚡</a>
+      <a href="#trailer" class="btn-out">▶ 트레일러</a>
+    </div>
+    <div class="hero-stats">
+      <span><strong>2,140,000+</strong> 사전예약자</span>
+      <span class="dot"></span>
+      <span>iOS · Android · PC 동시 지원</span>
+    </div>
+  </div>
+</section>
+
+<section class="rewards">
+  <div class="container">
+    <h2 class="section-title">사전예약 보상 <span>REWARDS</span></h2>
+    <p class="section-sub">사전예약자 누적에 따라 모든 유저에게 지급됩니다.</p>
+    <div class="reward-bar">
+      <div class="rb-track"><div class="rb-fill"></div></div>
+      <div class="rb-marks">
+        <div class="rb-mark hit"><strong>100만</strong><small>✔ 달성</small></div>
+        <div class="rb-mark hit"><strong>200만</strong><small>✔ 달성</small></div>
+        <div class="rb-mark"><strong>300만</strong><small>다음 보상</small></div>
+        <div class="rb-mark"><strong>500만</strong><small>최종 보상</small></div>
+      </div>
+    </div>
+    <div class="reward-grid">
+      <div class="reward-card">
+        <div class="rw-icon">🗡</div>
+        <h4>전설 무기 선택권</h4>
+        <p>출시와 동시에 6종 중 1개 영구 보유</p>
+      </div>
+      <div class="reward-card">
+        <div class="rw-icon">🐉</div>
+        <h4>한정 펫 "달의 늑대"</h4>
+        <p>이동속도 +15% · 사전예약 한정 외형</p>
+      </div>
+      <div class="reward-card">
+        <div class="rw-icon">💎</div>
+        <h4>다이아 10,000개</h4>
+        <p>출시 7일 이내 우편함으로 지급</p>
+      </div>
+      <div class="reward-card">
+        <div class="rw-icon">🎭</div>
+        <h4>커스터마이즈 풀팩</h4>
+        <p>의상 5종 + 헤어 3종 + 칭호 2종</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="class" class="classes">
+  <div class="container">
+    <h2 class="section-title">6개의 클래스 <span>CLASSES</span></h2>
+    <p class="section-sub">전직, 각성, 환생까지. 당신만의 빌드를 설계하라.</p>
+    <div class="class-grid">
+      <article class="class-card" data-color="#ff5e7e">
+        <div class="cc-img" style="background-image:url('https://picsum.photos/seed/eclipse-warrior/600/800')"></div>
+        <div class="cc-meta">
+          <small>01 / MELEE</small>
+          <h3>워로드</h3>
+          <p>두 손에 거대한 강철을 든 전선의 지휘관. 광역 도발과 즉발 카운터.</p>
+          <div class="stats"><span>방어 ████████░░</span><span>공격 ██████░░░░</span></div>
+        </div>
+      </article>
+      <article class="class-card" data-color="#7e5eff">
+        <div class="cc-img" style="background-image:url('https://picsum.photos/seed/eclipse-mage/600/800')"></div>
+        <div class="cc-meta">
+          <small>02 / MAGIC</small>
+          <h3>아크메이지</h3>
+          <p>차원의 균열을 다루는 마법사. 광역 폭딜과 시간 정지 궁극기.</p>
+          <div class="stats"><span>마력 █████████░</span><span>방어 ██░░░░░░░░</span></div>
+        </div>
+      </article>
+      <article class="class-card" data-color="#5effb1">
+        <div class="cc-img" style="background-image:url('https://picsum.photos/seed/eclipse-archer/600/800')"></div>
+        <div class="cc-meta">
+          <small>03 / RANGED</small>
+          <h3>이클립스 헌터</h3>
+          <p>달빛으로 화살을 만드는 저격형 궁수. 크리티컬 특화 폭발 빌드.</p>
+          <div class="stats"><span>치명 █████████░</span><span>회피 ██████░░░░</span></div>
+        </div>
+      </article>
+      <article class="class-card" data-color="#ffae5e">
+        <div class="cc-img" style="background-image:url('https://picsum.photos/seed/eclipse-rogue/600/800')"></div>
+        <div class="cc-meta">
+          <small>04 / ASSASSIN</small>
+          <h3>섀도우 댄서</h3>
+          <p>그림자 사이를 뛰어다니는 단검 무용수. 백스탭 1.5초 무적.</p>
+          <div class="stats"><span>속도 █████████░</span><span>방어 ██░░░░░░░░</span></div>
+        </div>
+      </article>
+      <article class="class-card" data-color="#5ec3ff">
+        <div class="cc-img" style="background-image:url('https://picsum.photos/seed/eclipse-priest/600/800')"></div>
+        <div class="cc-meta">
+          <small>05 / SUPPORT</small>
+          <h3>루나 프리스트</h3>
+          <p>달의 빛으로 동료를 비추는 사제. 공격적 힐러로 운영 가능.</p>
+          <div class="stats"><span>치유 █████████░</span><span>공격 ████░░░░░░</span></div>
+        </div>
+      </article>
+      <article class="class-card" data-color="#ff5ed7">
+        <div class="cc-img" style="background-image:url('https://picsum.photos/seed/eclipse-summoner/600/800')"></div>
+        <div class="cc-meta">
+          <small>06 / SUMMONER</small>
+          <h3>이클립서머너</h3>
+          <p>고대의 짐승을 부르는 소환사. 펫 5체 동시 조작 가능.</p>
+          <div class="stats"><span>전략 █████████░</span><span>조작 ████████░░</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="world" class="world">
+  <div class="container">
+    <h2 class="section-title">광활한 오픈필드 <span>OPEN WORLD</span></h2>
+    <p class="section-sub">7개 대륙, 230개 던전, 끝없이 펼쳐지는 모험.</p>
+  </div>
+  <div class="world-strip">
+    <div class="ws-card" style="background-image:url('https://picsum.photos/seed/eclipse-w1/800/1000')"><div class="ws-text"><small>대륙 01</small><h4>달의 평원</h4></div></div>
+    <div class="ws-card" style="background-image:url('https://picsum.photos/seed/eclipse-w2/800/1000')"><div class="ws-text"><small>대륙 02</small><h4>그림자 협곡</h4></div></div>
+    <div class="ws-card" style="background-image:url('https://picsum.photos/seed/eclipse-w3/800/1000')"><div class="ws-text"><small>대륙 03</small><h4>심해의 도시</h4></div></div>
+    <div class="ws-card" style="background-image:url('https://picsum.photos/seed/eclipse-w4/800/1000')"><div class="ws-text"><small>대륙 04</small><h4>불꽃의 산</h4></div></div>
+    <div class="ws-card" style="background-image:url('https://picsum.photos/seed/eclipse-w5/800/1000')"><div class="ws-text"><small>대륙 05</small><h4>천공의 정원</h4></div></div>
+  </div>
+</section>
+
+<section id="media" class="media">
+  <div class="container">
+    <h2 class="section-title">미디어 <span>MEDIA</span></h2>
+    <div class="media-main" id="trailer">
+      <div class="mm-img" style="background-image:url('https://picsum.photos/seed/eclipse-trailer/1600/900')">
+        <button class="play-btn" aria-label="play">▶</button>
+      </div>
+      <p class="mm-caption">공식 시네마틱 트레일러 · 03:48</p>
+    </div>
+    <div class="media-thumbs">
+      <a class="thumb" style="background-image:url('https://picsum.photos/seed/eclipse-th1/400/240')"></a>
+      <a class="thumb" style="background-image:url('https://picsum.photos/seed/eclipse-th2/400/240')"></a>
+      <a class="thumb" style="background-image:url('https://picsum.photos/seed/eclipse-th3/400/240')"></a>
+      <a class="thumb" style="background-image:url('https://picsum.photos/seed/eclipse-th4/400/240')"></a>
+    </div>
+  </div>
+</section>
+
+<section id="preorder" class="preorder">
+  <div class="container preo-inner">
+    <div class="preo-text">
+      <span class="hero-eyebrow">PRE-REGISTER NOW</span>
+      <h2>지금 등록하고<br />출시일 0시에 바로 시작.</h2>
+      <p>30초면 끝나는 사전예약. 보상은 출시 직후 우편함으로.</p>
+      <ul class="preo-list">
+        <li>✔ 출시 알림 푸시</li>
+        <li>✔ 누적 보상 자동 지급</li>
+        <li>✔ 인플루언서 미디어 자료 받기</li>
+      </ul>
+    </div>
+    <form class="preo-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='등록 완료 ✓';">
+      <h3>30초 사전예약</h3>
+      <label>플랫폼 선택
+        <div class="radio-row">
+          <label><input type="radio" name="plat" checked /> iOS</label>
+          <label><input type="radio" name="plat" /> Android</label>
+          <label><input type="radio" name="plat" /> PC</label>
+        </div>
+      </label>
+      <label>이메일<input type="email" placeholder="example@email.com" required /></label>
+      <label>전화번호 (선택)<input type="tel" placeholder="010-0000-0000" /></label>
+      <label class="check"><input type="checkbox" required /> 만 14세 이상이며, 출시 안내 수신에 동의합니다.</label>
+      <button type="submit">사전예약 신청하기</button>
+    </form>
+  </div>
+</section>
+
+<section id="news" class="news">
+  <div class="container">
+    <h2 class="section-title">최근 소식 <span>NEWS</span></h2>
+    <div class="news-grid">
+      <article><span class="tag">공지</span><h4>글로벌 출시일 공식 발표</h4><time>2026.05.10</time></article>
+      <article><span class="tag">개발</span><h4>개발자 인터뷰 #03 — 전투 시스템</h4><time>2026.05.04</time></article>
+      <article><span class="tag">이벤트</span><h4>200만 사전예약 돌파 기념 추첨</h4><time>2026.04.28</time></article>
+      <article><span class="tag">미디어</span><h4>2차 시네마틱 트레일러 공개</h4><time>2026.04.20</time></article>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <p class="logo">AVQENO</p>
+      <p class="foot-desc">© 2026 AVQENO GAMES. 본 게임은 미디어 시연용 가상 콘텐츠입니다.</p>
+    </div>
+    <div class="foot-rate">
+      <span class="rate">15</span>
+      <small>15세 이용가<br />폭력성, 사행성 다소 포함</small>
+    </div>
+    <div class="foot-links">
+      <a href="#">이용약관</a><a href="#">운영정책</a><a href="#">개인정보처리방침</a><a href="#">고객센터</a>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

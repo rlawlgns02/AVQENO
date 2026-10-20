@@ -1,0 +1,1 @@
+(()=>{function apply(){let off=matchMedia('(prefers-reduced-motion: reduce)').matches;try{off ||=localStorage.getItem('avqeno-motion')==='off'}catch{}document.documentElement.dataset.motion=off?'off':'on'}apply();addEventListener('storage',apply);matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',apply)})();

@@ -1,0 +1,145 @@
+:root {
+  --yellow: #FFD800;
+  --yellow-dark: #F5C100;
+  --red: #E60012;
+  --black: #222;
+  --gray-bg: #f6f6f6;
+  --gray-line: #e5e5e5;
+  --text: #333;
+  --muted: #777;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.5;
+}
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+/* 상단 알림 */
+.topbar { background: #1a1a1a; color: #ddd; font-size: 12px; }
+.topbar-inner { display: flex; justify-content: space-between; align-items: center; height: 32px; }
+.topbar-links a { margin-left: 18px; }
+.topbar-links a:hover { color: var(--yellow); }
+
+/* 헤더 */
+.header { background: #fff; border-bottom: 1px solid var(--gray-line); }
+.header-inner { display: flex; align-items: center; gap: 32px; height: 84px; }
+.logo { font-size: 30px; font-weight: 900; color: var(--black); }
+.logo span { color: var(--red); }
+.search { flex: 1; display: flex; border: 3px solid var(--yellow); border-radius: 4px; overflow: hidden; }
+.search input { flex: 1; padding: 12px 16px; border: 0; outline: none; font-size: 15px; }
+.search button { padding: 0 28px; background: var(--yellow); border: 0; font-weight: 700; cursor: pointer; font-size: 15px; }
+.header-nav { display: flex; gap: 18px; font-size: 14px; align-items: center; font-weight: 500; }
+.header-nav a:hover { color: var(--red); }
+.badge-hot { background: var(--red); color: #fff !important; padding: 6px 12px; border-radius: 999px; font-weight: 700; }
+
+/* 카테고리 바 */
+.category-bar { background: var(--black); }
+.category-inner { display: flex; gap: 28px; height: 46px; align-items: center; font-size: 14px; color: #fff; font-weight: 500; overflow-x: auto; }
+.category-inner a:hover { color: var(--yellow); }
+.category-inner .hot { color: var(--yellow); font-weight: 700; }
+
+/* 히어로 */
+.hero { padding: 28px 0 40px; background: linear-gradient(135deg, #FFE34D 0%, var(--yellow) 100%); }
+.hero-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items: center; }
+.hero-tag { display: inline-block; background: var(--red); color: #fff; padding: 6px 14px; border-radius: 4px; font-weight: 700; font-size: 13px; letter-spacing: 1px; }
+.hero-main h1 { font-size: 56px; line-height: 1.1; margin: 14px 0; font-weight: 900; color: var(--black); }
+.hero-main h1 strong { color: var(--red); font-weight: 900; }
+.hero-main p { font-size: 17px; color: #444; margin-bottom: 22px; }
+.countdown { display: flex; gap: 10px; margin-bottom: 24px; }
+.countdown > div { background: var(--black); color: var(--yellow); padding: 14px 18px; border-radius: 6px; text-align: center; min-width: 72px; }
+.countdown span { font-size: 28px; font-weight: 900; display: block; }
+.countdown small { font-size: 11px; color: #ccc; }
+.btn-yellow { display: inline-block; background: var(--black); color: var(--yellow); padding: 16px 36px; border-radius: 4px; font-weight: 700; font-size: 17px; box-shadow: 0 4px 0 #000; }
+.btn-yellow:hover { transform: translateY(2px); box-shadow: 0 2px 0 #000; }
+.hero-side { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.hero-card { background: #fff; padding: 18px; border-radius: 6px; display: flex; align-items: center; gap: 12px; }
+.hero-card span { font-size: 30px; }
+.hero-card p { font-size: 13px; line-height: 1.4; }
+.hero-card strong { color: var(--red); display: block; font-size: 14px; }
+
+/* 카테고리 그리드 */
+.cat-grid { padding: 30px 0; border-bottom: 1px solid var(--gray-line); }
+.cat-items { display: grid; grid-template-columns: repeat(12, 1fr); gap: 8px; }
+.cat-items a { text-align: center; padding: 10px 4px; border-radius: 8px; transition: background .15s; }
+.cat-items a:hover { background: var(--gray-bg); }
+.cat-icon { font-size: 32px; margin-bottom: 6px; }
+.cat-items span { font-size: 13px; }
+
+/* 섹션 공통 */
+.section { padding: 50px 0; }
+.section-gray { background: var(--gray-bg); }
+.section-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 24px; }
+.section-head h2 { font-size: 26px; font-weight: 900; }
+.section-head h2 small { font-size: 14px; color: var(--red); font-weight: 700; margin-left: 8px; }
+.more { font-size: 14px; color: var(--muted); }
+.more:hover { color: var(--red); }
+
+/* 상품 그리드 */
+.product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.product-grid.small { grid-template-columns: repeat(6, 1fr); }
+.product { background: #fff; border: 1px solid var(--gray-line); border-radius: 6px; overflow: hidden; transition: transform .15s, box-shadow .15s; cursor: pointer; position: relative; }
+.product:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+.product .thumb { width: 100%; aspect-ratio: 1; background: #eee center/cover; position: relative; }
+.product .badge { position: absolute; top: 8px; left: 8px; background: var(--red); color: #fff; font-size: 11px; padding: 4px 8px; border-radius: 3px; font-weight: 700; }
+.product .info { padding: 12px 14px 14px; }
+.product .title { font-size: 14px; height: 40px; overflow: hidden; margin-bottom: 6px; }
+.product .price-row { display: flex; align-items: baseline; gap: 6px; }
+.product .discount { color: var(--red); font-weight: 900; font-size: 18px; }
+.product .price { font-weight: 900; font-size: 18px; }
+.product .original { color: #aaa; text-decoration: line-through; font-size: 13px; }
+.product .reviews-meta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.product-grid.small .product .title { font-size: 13px; height: 36px; }
+.product-grid.small .product .discount, .product-grid.small .product .price { font-size: 16px; }
+
+/* 띠배너 */
+.strip { background: var(--red); color: #fff; padding: 22px 0; }
+.strip-inner { display: flex; justify-content: space-between; align-items: center; font-size: 16px; }
+.strip-inner strong { font-size: 20px; color: var(--yellow); }
+.btn-line { border: 2px solid #fff; padding: 8px 22px; border-radius: 4px; font-weight: 700; }
+.btn-line:hover { background: #fff; color: var(--red); }
+
+/* 리뷰 */
+.reviews { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.review { background: #fff; padding: 22px; border-radius: 6px; border: 1px solid var(--gray-line); }
+.review .stars { color: #FFB400; margin-bottom: 8px; font-size: 16px; }
+.review p { font-size: 14px; margin-bottom: 12px; line-height: 1.55; }
+.review small { color: var(--muted); font-size: 12px; }
+
+/* 푸터 */
+.footer { background: #2a2a2a; color: #bbb; margin-top: 40px; padding: 40px 0 0; font-size: 13px; }
+.footer-inner { display: grid; grid-template-columns: 1.2fr 2fr; gap: 40px; padding-bottom: 30px; }
+.footer h4 { color: #fff; font-size: 22px; margin-bottom: 10px; }
+.footer p { line-height: 1.7; }
+.payments { margin-top: 14px; color: #888; font-size: 12px; }
+.foot-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.foot-cols h5 { color: #fff; font-size: 14px; margin-bottom: 12px; }
+.foot-cols a { display: block; padding: 4px 0; color: #aaa; }
+.foot-cols a:hover { color: var(--yellow); }
+.footer-bot { border-top: 1px solid #444; padding: 20px 16px; color: #888; font-size: 12px; }
+
+/* 반응형 */
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-main h1 { font-size: 38px; }
+  .cat-items { grid-template-columns: repeat(6, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid.small { grid-template-columns: repeat(3, 1fr); }
+  .reviews { grid-template-columns: repeat(2, 1fr); }
+  .footer-inner { grid-template-columns: 1fr; }
+  .header-inner { flex-wrap: wrap; height: auto; padding: 14px 0; gap: 12px; }
+  .search { order: 3; flex-basis: 100%; }
+}
+@media (max-width: 560px) {
+  .cat-items { grid-template-columns: repeat(4, 1fr); }
+  .product-grid, .product-grid.small { grid-template-columns: repeat(2, 1fr); }
+  .reviews { grid-template-columns: 1fr; }
+  .foot-cols { grid-template-columns: 1fr; }
+  .hero-side { grid-template-columns: 1fr 1fr; }
+}
